@@ -38,15 +38,17 @@ table.excel tbody td
 <body><!-- menu_atas.php A0 -->
 
 <!-- Jadual nama_pengguna ########################################### -->
+<?php
+$method = 'http://jpmuar07-pc/projek-github/a_rakan/shazlinaziz/mobileRegister/register.php';
+?>
 <div class="container">
-<div class="form-group"><div class="col-sm-8">
-	<div class="input-group input-group-lg">
-		<span class="input-group-addon">Jadual nama_pengguna</span>
-	</div>
-</div></div>
+	<div class="form-group"><div class="col-sm-9">
+		<div class="input-group input-group-lg">
+			<span class="input-group-addon">method=<?php echo $method ?></span>
+		</div>
+	</div></div>
 </div><br>
-<form method="POST" action="register.php"
-class="form-horizontal">
+<form method="POST" action="<?php echo $method ?>" class="form-horizontal">
 <div class="form-group">
 	<label for="inputTajuk" class="col-sm-2 control-label">namaPengguna</label>
 	<div class="col-sm-6 ">
